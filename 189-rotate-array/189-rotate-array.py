@@ -4,12 +4,14 @@ class Solution:
         Do not return anything, modify nums in-place instead.
         """
         """
+        # solution 1
         for i in range(k):
             temp = nums.pop(-1)
             nums.insert(0, temp)
         return nums
         """
         
+        # solution 2
         k = k % len(nums)
         l, r = 0, len(nums)-1
         while l < r:
