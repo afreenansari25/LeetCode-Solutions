@@ -15,7 +15,8 @@ class Solution:
                 nums1[last] = nums2[n-1]
                 n -= 1
             last -= 1
-            
+        
+        # if nums1 has no elements 
         while n > 0:
             nums1[last] = nums2[n-1]
             n, last = n-1, last-1
