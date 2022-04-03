@@ -6,5 +6,4 @@ class Solution:
             if remaining in seen:
                 return key, seen[remaining]
             seen[value] = key
-            
         
