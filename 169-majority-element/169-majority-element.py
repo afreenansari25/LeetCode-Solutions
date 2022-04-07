@@ -8,9 +8,9 @@ class Solution:
                 hashT[num] = 1
             else:
                 hashT[num] += 1
-        
-        for key, value in hashT.items():
-            maxV = max(maxV, hashT[key])
+            maxV = max(maxV, hashT[num])
+        #for key, value in hashT.items():
+            
             
         for key, value in hashT.items():
             if value == maxV:
