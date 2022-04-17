@@ -7,10 +7,10 @@ class Solution:
             key = "".join(sorted(s))
             
             if key not in d:
-                d[key] = [s]
-            
+                d[key] = [s]            
             else:
                 d[key].append(s)
+                
         return d.values()
                 
             
