@@ -3,9 +3,6 @@ class Solution:
         res = []
         nums.sort()
         
-        if len(nums) < 3:
-            return []
-        
         for i, a in enumerate(nums):
             if i > 0 and a == nums[i-1]:
                 continue
