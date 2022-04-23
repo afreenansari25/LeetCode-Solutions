@@ -3,8 +3,7 @@ class Solution:
         left = self.binarySearch(nums, target, True)
         right = self.binarySearch(nums, target, False)
         return [left, right]
-    
-    
+            
     def binarySearch(self, nums, target, leftBias):
         l, r = 0, len(nums) - 1
         i = - 1
