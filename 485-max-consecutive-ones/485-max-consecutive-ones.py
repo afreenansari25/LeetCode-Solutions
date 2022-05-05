@@ -1,5 +1,7 @@
 class Solution:
     def findMaxConsecutiveOnes(self, nums: List[int]) -> int:
+        '''
+        Solution 1
         l, count = 0, 0
         
         for r, num in enumerate(nums):
@@ -7,9 +9,8 @@ class Solution:
                 l = r + 1
             count = max(count, r-l+1)
         return count
+        '''
     
-        ''' 
-        soultion: 2
         windowSize, newCount, p = [], 0, 0
         
         for i in range(len(nums)+1):            
@@ -20,5 +21,4 @@ class Solution:
                 newCount += 1
                 
         return max(windowSize)
-        '''
         
