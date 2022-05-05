@@ -9,6 +9,7 @@ class Solution:
         return count
     
         ''' 
+        soultion: 2
         windowSize, newCount, p = [], 0, 0
         
         for i in range(len(nums)+1):            
