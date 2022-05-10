@@ -3,16 +3,16 @@ class Solution:
         
         stack = []
         
-        for i in s:
+        for c in s:
             
-            if stack and i == ')' and stack[-1] == '(':
+            if stack and c == ')' and stack[-1] == '(':
                 stack.pop()
-            elif stack and i == ']' and stack[-1] == '[':
+            elif stack and c == ']' and stack[-1] == '[':
                 stack.pop()
-            elif stack and i == '}' and stack[-1] == '{':
+            elif stack and c == '}' and stack[-1] == '{':
                 stack.pop()
             else:
-                stack.append(i)
+                stack.append(c)
                 
         return True if not stack else False
         
