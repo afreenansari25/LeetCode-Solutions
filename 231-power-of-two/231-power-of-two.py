@@ -6,4 +6,5 @@ class Solution:
             return True
         if n % 2 == 0:
             return self.isPowerOfTwo(n//2)
+        return False
         
