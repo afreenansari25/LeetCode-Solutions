@@ -3,10 +3,10 @@ class Solution:
         res = 0
         
         for c in s:
-            d = ord(c) - ord('A') + 1
+            d = ord(c) - ord('A') + 1 
             res = res*26 + d
             
-        return res 
+        return res
             
             
         
