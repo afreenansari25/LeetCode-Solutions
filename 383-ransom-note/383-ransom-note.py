@@ -1,6 +1,6 @@
 class Solution:
     def canConstruct(self, ransomNote: str, magazine: str) -> bool:
-        m = [i for i in magazine]
+        m = list(magazine)
         
         for c in ransomNote:
             if c in m:
