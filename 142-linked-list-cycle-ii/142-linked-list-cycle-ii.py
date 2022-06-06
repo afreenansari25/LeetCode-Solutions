@@ -6,12 +6,12 @@
 
 class Solution:
     def detectCycle(self, head: Optional[ListNode]) -> Optional[ListNode]:
-        visited = []
+        visited = set()
         
         while head:
             if head in visited:
                 return head
-            visited.append(head)
+            visited.add(head)
             head = head.next
         return None
         
