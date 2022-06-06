@@ -16,6 +16,6 @@ class Solution:
             else:
                 prev = prev.next
             curr = curr.next
-                
+        
         return dummy.next
         
