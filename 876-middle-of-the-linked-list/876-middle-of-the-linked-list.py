@@ -6,14 +6,14 @@ import math
 #         self.next = next
 class Solution:
     def middleNode(self, head: Optional[ListNode]) -> Optional[ListNode]:
-        len = 0
+        l = 0
         curr = head
         
         while curr:
-            len += 1
+            l += 1
             curr = curr.next
             
-        for i in range(len//2):
+        for i in range(l//2):
             head = head.next
             
         return head
