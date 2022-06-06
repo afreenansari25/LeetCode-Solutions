@@ -7,16 +7,13 @@ import math
 class Solution:
     def middleNode(self, head: Optional[ListNode]) -> Optional[ListNode]:
         len = 0
-        curr = node = head
+        curr = head
         
         while curr:
             len += 1
             curr = curr.next
             
-        l = len//2 #if len % 2 != 0 else len//2 + 1 
-        #print(l)
+        for i in range(len//2):
+            head = head.next
             
-        for i in range(l):
-            node = node.next
-            
-        return node
+        return head
