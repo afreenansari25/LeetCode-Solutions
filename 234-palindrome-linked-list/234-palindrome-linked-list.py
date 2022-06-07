@@ -11,10 +11,11 @@ class Solution:
         while fast and fast.next:
             slow = slow.next
             fast = fast.next.next
-            
+        
+        # slow is pointing at the mid of list
         mid = slow
         
-        # Revesre the st half of the list
+        # Revesre the 2nd half of the list
         prev, cur = None, mid
         while cur:
             nxt = cur.next
