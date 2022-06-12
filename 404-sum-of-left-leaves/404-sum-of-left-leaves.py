@@ -9,9 +9,6 @@ class Solution:
         if not root:
             return None
         
-        if not root.right and not root.left:
-            return 0
-        
         q = deque([root])
         res = 0
         
