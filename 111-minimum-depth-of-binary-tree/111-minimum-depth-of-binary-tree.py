@@ -8,7 +8,7 @@ class Solution:
     def minDepth(self, root: Optional[TreeNode]) -> int:
         
         '''
-        # using recursion
+        # recursive approach
         
         if not root:
             return 0
@@ -18,6 +18,7 @@ class Solution:
             return 1 + max(self.minDepth(root.left), self.minDepth(root.right))
         '''
         
+        # iterative approach
         if not root:
             return 0 
         
