@@ -16,8 +16,8 @@ class Solution:
         
         while q:
             level += 1
-            
-            for i in range(len(q)):
+            n = len(q)
+            for i in range(n):
                 node = q.popleft()
                 
                 for child in node.children:
