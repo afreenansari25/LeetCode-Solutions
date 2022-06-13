@@ -7,6 +7,7 @@
 class Solution:
     def getMinimumDifference(self, root: Optional[TreeNode]) -> int:
         res = []
+        
         def in_order(root):
             if root:
                 in_order(root.left)
