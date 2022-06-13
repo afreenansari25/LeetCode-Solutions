@@ -20,6 +20,7 @@ class Solution:
             
             for i in range(n):
                 node = q.popleft()
+                
                 for child in node.children:
                     q.append(child)
                     
