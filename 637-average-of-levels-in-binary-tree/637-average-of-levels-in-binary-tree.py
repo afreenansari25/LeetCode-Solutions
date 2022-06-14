@@ -14,6 +14,7 @@ class Solution:
         while q:
             val = []
             child = []
+            
             for node in q:
                 val.append(node.val)
                 
@@ -21,8 +22,8 @@ class Solution:
                     child.append(node.left)
                 if node.right:
                     child.append(node.right)
-            q = child
-                    
+            q = child                    
             res.append(sum(val)/len(val))
+            
         return res
         
