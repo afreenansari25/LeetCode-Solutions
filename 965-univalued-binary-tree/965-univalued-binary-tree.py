@@ -9,20 +9,20 @@ class Solution:
         if not root:
             return None
         q = deque([root])
+        curr = root.val
         
         while q:
             node = q.popleft()
             
+            if node.val != curr:
+                return False
+            
             if  node.left:
-                if node.val == node.left.val:
-                    q.append(node.left)
-                else:
-                    return False
+                q.append(node.left)
             if node.right:
-                if node.val == node.right.val:
-                    q.append(node.right)
-                else:
-                    return False
+                q.append(node.right)
+                
         return True
+    
                 
         
