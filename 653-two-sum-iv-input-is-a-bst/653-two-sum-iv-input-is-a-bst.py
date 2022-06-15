@@ -6,7 +6,7 @@
 #         self.right = right
 class Solution:
     def findTarget(self, root: Optional[TreeNode], k: int) -> bool:            
-        seen = []
+        seen = set()
         q = deque([root])
         
         while q:
@@ -16,7 +16,7 @@ class Solution:
             if val in seen:
                 return True
             else:
-                seen.append(node.val)
+                seen.add(node.val)
                 
                 if node.left:
                     q.append(node.left)
