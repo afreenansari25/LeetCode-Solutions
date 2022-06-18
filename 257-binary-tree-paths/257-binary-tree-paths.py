@@ -6,8 +6,7 @@
 #         self.right = right
 class Solution:
     def binaryTreePaths(self, root: Optional[TreeNode]) -> List[str]:
-        res = []
-        
+        res = []        
         
         def dfs(root, ls, res):
             print(ls)
