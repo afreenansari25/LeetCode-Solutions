@@ -25,7 +25,6 @@ class Solution:
                 
         l1 = helper(root1)
         l2 = helper(root2)
-        print(l1, l2)
         
         return l1 == l2
             
