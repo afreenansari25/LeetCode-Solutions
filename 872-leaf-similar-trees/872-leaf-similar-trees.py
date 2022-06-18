@@ -6,7 +6,6 @@
 #         self.right = right
 class Solution:
     def leafSimilar(self, root1: Optional[TreeNode], root2: Optional[TreeNode]) -> bool:
-        l1, l2 = [], []
         
         def helper(root):
             res = []
@@ -22,11 +21,8 @@ class Solution:
                     stack.append(node.left)
                 
             return res
-                
-        l1 = helper(root1)
-        l2 = helper(root2)
         
-        return l1 == l2
+        return helper(root1) == helper(root2)
             
             
                 
