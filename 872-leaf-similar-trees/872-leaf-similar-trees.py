@@ -13,7 +13,7 @@ class Solution:
             while stack:            
                 node = stack.pop()
 
-                if node.left is None and node.right is None:
+                if not node.left and not node.right:
                     res.append(node.val)
                 if node.right:
                     stack.append(node.right)
