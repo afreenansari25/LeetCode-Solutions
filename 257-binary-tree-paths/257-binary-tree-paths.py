@@ -9,7 +9,6 @@ class Solution:
         res = []        
         
         def dfs(root, ls, res):
-            print(ls)
             if not root.left and not root.right:
                 res.append(ls+str(root.val))
                 
